@@ -43,14 +43,137 @@ header p {
 /* main css*/
 
 main {
-    margin: 92px;
-    z-index: 6;
+    margin-top: 123px;
+    margin-bottom: 92px;
+    margin-left: 19px;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
 }
 
-main div{
-    height: 260px;
+
+.dishes{
+    height: 258px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
+.food-title{
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.food-options {
+    background-color: #ffffff;
+    height: 216px;
+    width: 172px;
+    border: 4px;
+    border-radius: 9px;
+    box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    margin-top: 17px;
+    margin-right: 16px;
+    /*box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F   adicionar isso pra funfar a margem verde*/ 
+}
+
+.food-options img{
+    margin-top: 18px;
+    margin-left: 14px;
+    margin-right: 14px;
+    border-radius: 4px;
+    width: 144px;
+    height: 87px;
+}
+
+.food-options-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+    margin-top: 8px;
+    margin-left: 14px;
+    width: 144px;
+    height: 23px; 
+}
+
+.food-options-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #a6a6a6;
+    margin-top: 8px;
+    margin-left: 14px;
+    width: 147px;
+}
+
+.f-o-price-selection {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    margin-top: 8px;
+    margin-left:14px;
+    width: 144px;
+    height: 20px;
+}
+.food-options-price {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    
+}
+
+.food-select ion-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 90px;
+    border: none;
+    color: white;
+}
+
+.food-scrolls {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.hidden {
+    display: none;
+}
+
+.drinks{
+    height: 258px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 27px;
+}
+
+.dessert{
+    height: 258px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 27px;
+    margin-bottom: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* footer css*/
