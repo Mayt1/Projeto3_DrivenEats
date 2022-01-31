@@ -26,13 +26,13 @@
     </header>
 
     <main>
-        <div class="dishes">
+        <div class="dishes" data-identifier="dishes">
             <div class="food-title">
                 <span>Primeiro, seu prato</span>
             </div>
             <div class="food-scrolls">
                 <!--botar mais comidas aqui-->
-                <div class="food-options" data-identifier="food-option">
+                <div class="food-options comida1" onclick="selecionarComida('comida1')" data-identifier="food-option">
                     <img src="images/frango_yin_yang 3.png">
                     <div class="food-options-title"  data-identifier="food-title"> Comidinha</div>
                     <div class="food-options-description"> vem gostosa, bem gostosa, quentinha</div>
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <!--botar mais comidas aqui-->
-                <div class="food-options" data-identifier="food-option">
+                <div class="food-options comida2" onclick="selecionarComida('comida2')" data-identifier="food-option">
                     <img src="images/frango_yin_yang 3.png">
                     <div class="food-options-title"  data-identifier="food-title"> Comidinha</div>
                     <div class="food-options-description"> vem gostosa, bem gostosa, quentinha</div>
@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <!--botar mais comidas aqui-->
-                <div class="food-options" data-identifier="food-option">
+                <div class="food-options comida3" onclick="selecionarComida('comida3')" data-identifier="food-option">
                     <img src="images/frango_yin_yang 3.png">
                     <div class="food-options-title"  data-identifier="food-title"> Comidinha</div>
                     <div class="food-options-description"> vem gostosa, bem gostosa, quentinha</div>
@@ -62,18 +62,16 @@
                     </div>
                 </div>
                 
-
-
             </div> 
         </div>
 
-        <div class="drinks">
+        <div class="drinks" data-identifier="drinks">
             <div class="food-title">
                 <span>Agora, sua bebida</span>
             </div>
             <div class="food-scrolls">
                 <!--botar mais comidas aqui-->
-                <div class="food-options" data-identifier="food-option">
+                <div class="food-options bebida1" onclick="selecionarBebida('bebida1')" data-identifier="food-option">
                     <img src="images/coquinha_gelada 2.png">
                     <div class="food-options-title"  data-identifier="food-title"> Coca-cola</div>
                     <div class="food-options-description"> 350ml de pura delicia gelada</div>
@@ -83,7 +81,7 @@
                     </div>
                 </div>
                 <!--botar mais comidas aqui-->
-                <div class="food-options" data-identifier="food-option">
+                <div class="food-options bebida2" onclick="selecionarBebida('bebida2')" data-identifier="food-option">
                     <img src="images/coquinha_gelada 2.png">
                     <div class="food-options-title"  data-identifier="food-title"> Coca-cola</div>
                     <div class="food-options-description"> 350ml de pura delicia gelada</div>
@@ -93,7 +91,7 @@
                     </div>
                 </div>
                 <!--botar mais comidas aqui-->
-                <div class="food-options" data-identifier="food-option">
+                <div class="food-options bebida3" onclick="selecionarBebida('bebida3')" data-identifier="food-option">
                     <img src="images/coquinha_gelada 2.png">
                     <div class="food-options-title"  data-identifier="food-title"> Coca-cola</div>
                     <div class="food-options-description"> 350ml de pura delicia gelada</div>
@@ -107,13 +105,13 @@
             </div> 
         </div>
 
-        <div class="dessert">
+        <div class="dessert" data-identifier="desserts">
             <div class="food-title">
                 <span>Por fim, sua sobremesa</span>
             </div>
             <div class="food-scrolls">
                 <!--botar mais comidas aqui-->
-                <div class="food-options" data-identifier="food-option">
+                <div class="food-options sobremesa1" onclick="selecionarSobremesa('sobremesa1')" data-identifier="food-option">
                     <img src="images/pudim 2.png">
                     <div class="food-options-title"  data-identifier="food-title"> Pudim</div>
                     <div class="food-options-description"> Apenas um pudim delicioso</div>
@@ -123,7 +121,7 @@
                     </div>
                 </div>
                 <!--botar mais comidas aqui-->
-                <div class="food-options" data-identifier="food-option">
+                <div class="food-options sobremesa2" onclick="selecionarSobremesa('sobremesa2')" data-identifier="food-option">
                     <img src="images/pudim 2.png">
                     <div class="food-options-title"  data-identifier="food-title"> Pudim</div>
                     <div class="food-options-description"> Apenas um pudim delicioso</div>
@@ -133,7 +131,7 @@
                     </div>
                 </div>
                 <!--botar mais comidas aqui-->
-                <div class="food-options" data-identifier="food-option">
+                <div class="food-options sobremesa3" onclick="selecionarSobremesa('sobremesa3')" data-identifier="food-option">
                     <img src="images/pudim 2.png">
                     <div class="food-options-title"  data-identifier="food-title"> Pudim</div>
                     <div class="food-options-description"> Apenas um pudim delicioso</div>
