@@ -224,3 +224,22 @@ footer button{
 footer p{
     width: 200px;
 }
+
+.ativo button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    height: 61px;
+    width: 364px;
+    color: white;
+    background-color: #32B72F;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ativo p{
+    width: 200px;
+}

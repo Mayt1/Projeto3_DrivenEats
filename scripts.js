@@ -1,16 +1,18 @@
 let comidaSelecionada
 let bebidaSelecionada
 let sobremesaSelecionada
-
+let nomeCliente
+let enderecoCliente
 //comidas
 
 
 function selecionarComida(qualComida) {
     deselecionarComida()
-    //iconeshow(qualComida)
+    //iconeshow()
     const comida = document.querySelector("." + qualComida)
     comidaSelecionada = qualComida
     comida.classList.add("selecionado1")
+    showbotao()
 
 }
 
@@ -42,6 +44,7 @@ function selecionarBebida(qualBebida) {
     const bebida = document.querySelector("." + qualBebida)
     bebidaSelecionada = qualBebida
     bebida.classList.add("selecionado2")
+    showbotao()
 
 }
 
@@ -58,6 +61,7 @@ function selecionarSobremesa(qualSobremesa) {
     const sobremesa = document.querySelector("." + qualSobremesa)
     sobremesaSelecionada = qualSobremesa
     sobremesa.classList.add("selecionado3")
+    showbotao()
 
 }
 
@@ -68,9 +72,21 @@ function deselecionarSobremesa() {
     }
 }
 
-function acionarbotao() {
-    if ((comidaSelecionada !== null) && (bebidaSelecionada !== null) && (sobremesaSelecionada !== null)) {
+function showbotao() {
+    if ((comidaSelecionada !== undefined) && (bebidaSelecionada !== undefined) && (sobremesaSelecionada !== undefined)) {
+        const botaoAparece = document.querySelector(".ativo")
+        botaoAparece.classList.remove("hidden")
 
-
+        const botaoSome = document.querySelector(".button")
+        botaoSome.classList.add("hidden")
     }
+}
+
+function pedirDados() {
+    nomeCliente = prompt("Qual é o seu nome?")
+    enderecoCliente = prompt("Qual o seu endereço?")
+    let message;
+    message ="Olá, gostaria de fazer o pedido:\n- Prato:"+" "+comidaSelecionada+"\n- Bebida:" + " "+bebidaSelecionada+"\n- Sobremesa:" + " "+sobremesaSelecionada+ "\nNome: "+nomeCliente+"\nEndereço: "+enderecoCliente;
+    
+    window.open("https://wa.me/5534993056450?text="+encodeURI(message));
 }
